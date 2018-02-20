@@ -52,6 +52,7 @@ module.exports = {
   appNodeModules: resolveApp('node_modules'),
   appTsConfig: resolveApp('tsconfig.json'),
   appTsLint: resolveApp('tslint.json'),
+  archieML: resolveApp('config/archieml-loader'),
   publicUrl: getPublicUrl(resolveApp('package.json')),
-  servedPath: getServedPath(resolveApp('package.json')),
+  servedPath: getServedPath(resolveApp('package.json'))
 };

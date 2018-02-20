@@ -157,7 +157,7 @@ module.exports = {
           // archieML files
           {
             test: /\.aml$/,
-            loader: require.resolve('./config/archieml-loader'),
+            loader: paths.archieML,
           },
           // "postcss" loader applies autoprefixer to our CSS.
           // "css" loader resolves paths in CSS and adds assets as dependencies.
