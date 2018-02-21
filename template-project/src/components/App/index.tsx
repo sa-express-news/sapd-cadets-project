@@ -1,15 +1,17 @@
 import * as React from 'react';
 
+import NavBar 	from '../NavBar';
 import Sections from '../Sections';
 
 const Story = require('../../story.aml');
 
-import './App.css';
+import './App.scss';
 
 export default () => (
 	<div className="App">
 		<div className="Story">
-			<Sections sections={Story.sections}/>
+			<NavBar url={Story.top.meta.url} />
+			<Sections sections={Story.sections} />
 		</div>
 	</div>
 );

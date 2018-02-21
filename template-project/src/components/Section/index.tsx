@@ -3,7 +3,7 @@ import * as React from 'react';
 // Interfaces
 import { Mapper } from '../ComponentMapper';
 
-import './Section.css';
+import './Section.scss';
 
 interface Props {
 	data: Array<object>;
