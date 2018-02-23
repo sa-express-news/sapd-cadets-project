@@ -1,28 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Sanchez|Suez+One');
+@font-face {
+	font-family: 'Police-Cruiser-Italic';
+	src: url('../../fonts/police_cruiser/policecruiserital.ttf') format('truetype');
+};
+
+@import 'node_modules/express-news-styleguide/init-base';
+
 .App {
-  text-align: center;
-}
+  color: #333;
+  font-family: Georgia, serif;
+  line-height: 1.2;
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  @include mediaquery($default-tablet) {
+    line-height: 1.45;
+  }
 }

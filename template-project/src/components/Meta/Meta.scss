@@ -1,0 +1,84 @@
+@import 'node_modules/express-news-styleguide/init-base';
+@import '../../styles/variables';
+
+div.Meta {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
+	width: 98vw;
+	max-width: 900px;
+	margin: 0 auto;
+	height: 100vh;
+	color: white;
+	font-family: Pierpont, serif;
+	text-align: center;
+	background: radial-gradient(rgba($policeBlue,0.6) 0, rgba($policeBlue,0) 80%, transparent);
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	opacity: 0;
+	visibility: hidden;
+
+	&.show {
+		opacity: 1;
+ 		visibility: visible; 
+	}
+
+	h1 {
+		font-family: Police-Cruiser-Italic, Pierpont, serif;
+		font-size: 4.5rem;
+		font-weight: 100;
+		margin: 0;
+		line-height: 3rem;
+	}
+
+	h2 {
+		font-size: 2.5rem;
+		text-transform: uppercase;
+
+		span {
+			font-size: 1.5rem;
+		}
+	}
+
+	hr {
+	    border: 0;
+	    height: 1px;
+	    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+
+	    &.top {
+	    	width: 40%;
+	    	margin: 1rem 0;
+	    }
+
+	    &.bottom {
+	    	width: 10%;
+	    	margin: 0.6rem 0;
+	    }
+	}
+
+	h3 {
+		padding: 0.5rem 0;
+		font-size: 1.2rem;
+
+		&.subhead {
+			padding: 0.5rem 0 1rem;
+			display: none;
+
+			@include mediaquery($default-tablet) {
+				display: inline;
+			}
+		}
+	}
+
+	div.spacer {
+		flex-basis: 10%;
+
+		@include mediaquery($default-tablet) {
+			flex-basis: 20%;
+		}
+	}
+}

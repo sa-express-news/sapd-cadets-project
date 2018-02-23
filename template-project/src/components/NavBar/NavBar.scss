@@ -1,8 +1,10 @@
+@import '../../styles/variables';
+
 div.NavBar {
 	position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 60px;
-    background: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 20%, rgba(0,0,0,0.05) 80%, transparent);
+    background: linear-gradient(rgba($policeBlue,0.5) 0%, rgba($policeBlue,0.3) 20%, rgba($policeBlue,0.05) 80%, transparent);
 }
