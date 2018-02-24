@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import './ENLogo.scss';
 
-const icon = require('./en-logo.svg');
+const icon = require('../Icons/en_logo.svg');
 
 export default () => (
 	<div className="ENLogo">

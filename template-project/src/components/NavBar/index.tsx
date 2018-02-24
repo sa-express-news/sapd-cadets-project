@@ -1,17 +1,13 @@
 import * as React from 'react';
 
-import ENLogo from '../ENLogo';
-
 import './NavBar.scss';
 
 interface Props {
-	url: string;
+	readonly children?: ReadonlyArray<JSX.Element>;
 }
 
-export default ({ url }: Props) => (
+export default ({ children }: Props) => (
 	<div className="NavBar">
-		<div className="left">
-			<ENLogo />
-		</div>
+		{children}
 	</div>
 );

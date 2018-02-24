@@ -14,6 +14,17 @@ div.SeriesNav {
 	margin: 0 auto;
 	padding-bottom: 40px;
 	background: radial-gradient(rgba($policeBlue,0.6) 0, rgba($policeBlue,0.2) 80%, transparent); // farthest-side at center
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	opacity: 0;
+	visibility: hidden;
+
+	&.show {
+		opacity: 1;
+ 		visibility: visible; 
+	}
 
 	h3.chatter {
 		font-size: 1.2rem;
@@ -49,6 +60,10 @@ div.SeriesNav {
 					h4 {
 						color: white;
 					}
+				}
+
+				hr {
+					background-image: linear-gradient(to right, rgba($policeYellow, 0), rgba($policeYellow, 0.75), rgba($policeYellow, 0));
 				}
 			}
 

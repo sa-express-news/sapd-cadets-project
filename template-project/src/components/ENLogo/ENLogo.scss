@@ -1,4 +1,5 @@
 @import 'node_modules/express-news-styleguide/init-base';
+@import '../../styles/variables';
 
 .ENLogo{
 	cursor: pointer;
@@ -19,7 +20,6 @@
 }
 
 .ENLogo img {
-    color: #B3B3B3;
     transition: color 1s linear;
 }
 

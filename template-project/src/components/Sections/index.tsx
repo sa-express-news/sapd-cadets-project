@@ -3,6 +3,8 @@ import * as React 	from 'react';
 import Section from '../Section';
 import ComponentMapper from '../ComponentMapper';
 
+import './Sections.scss';
+
 interface Props {
 	sections: object;
 }
