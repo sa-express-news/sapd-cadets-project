@@ -24,7 +24,11 @@ div.SectionHead {
 	}
 
 	.wrapper {
-		height: 400px;
+		height: 40vh;
+
+		@media (min-width: 768px) {
+		    height: 70vh;
+	    }
 
 		.inner {
 			font-family: 'Special Elite', cursive;
@@ -38,6 +42,7 @@ div.SectionHead {
 
 		    @media (min-width: 768px) {
 		        width: 80%;
+		        top: 90%;
 		    }
 
 		    @media (min-width: 1024px) {

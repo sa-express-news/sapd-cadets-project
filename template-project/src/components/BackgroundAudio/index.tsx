@@ -109,6 +109,7 @@ class BackgroundAudio extends React.Component<Props, State> {
 		const { instance } = this.state;
 		const currComponentPosition = this.getComponentPosition(instance);
 		if (!_.isEqual(componentPosition, currComponentPosition)) {
+			// This should only occure once or twice, if at all, as all assets are still loading and pieces are shifting.
 			this.setState({ componentPosition: currComponentPosition });
 		}
 	}
