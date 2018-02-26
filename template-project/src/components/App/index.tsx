@@ -15,19 +15,8 @@ import './App.scss';
 
 const Story = require('../../story.aml');
 
-export interface AppPosition {
-	pageOffsetX: number;
-	pageOffsetY: number;
-	pageHeight: number;
-	pageWidth: number;
-}
-
-export interface ComponentPosition {
-	offsetLeft: number;
-	offsetTop: number;
-	offsetWidth: number;
-	offsetHeight: number;
-}
+// Interfaces
+import { AppPosition } from '../../utils/interfaces';
 
 interface State {
 	show: boolean;
@@ -50,7 +39,6 @@ class App extends React.Component<Props, State> {
 			show: false,
 			appPosition: defaultAppPosition,
 		};
-		this.getComponentVisiblity = this.getComponentVisiblity.bind(this);
 	}
 
 	componentDidMount() {
@@ -80,27 +68,6 @@ class App extends React.Component<Props, State> {
 		}
 	}
 
-	// getComponentVisiblity returns the percentage of a component that is currently visible
-	getComponentVisiblity(appPosition: AppPosition, componentPosition: ComponentPosition) {
-		const { pageOffsetX, pageOffsetY, pageWidth, pageHeight } 	= appPosition;
-		const { offsetLeft, offsetTop, offsetWidth, offsetHeight }	= componentPosition;
-
-		const x 		= offsetLeft;
-		const y 		= offsetTop;
-		const width 	= offsetWidth;
-		const height 	= offsetHeight;
-
-		const right  	= x + width;
-		const bottom 	= y + height;
-		
-		const visX = Math.max(0, Math.min(width, pageOffsetX + pageWidth - x, right - pageOffsetX));
-		const visY = Math.max(0, Math.min(height, pageOffsetY + pageHeight - y, bottom - pageOffsetY));
-
-		const amountVisible = visX * visY / (width * height);
-
-		return _.isNaN(amountVisible) ? 0 : amountVisible; // watching for NaN to protect against empty dimensions in inital render 
-	}
-
 	render() {
 		const { show, appPosition } = this.state;
 		return (
@@ -109,7 +76,6 @@ class App extends React.Component<Props, State> {
 					<BackgroundAudio 
 						appPosition={appPosition}
 						file={Story.top.hero.audio}
-						getComponentVisiblity={this.getComponentVisiblity}
 						fraction={0.1}
 					>
 						<NavBar>
@@ -127,7 +93,7 @@ class App extends React.Component<Props, State> {
 					</BackgroundAudio>
 				</div>
 				<div className="Story">
-					<Sections sections={Story.sections} />
+					<Sections sections={Story.sections} appPosition={appPosition} />
 				</div>
 			</div>
 		);

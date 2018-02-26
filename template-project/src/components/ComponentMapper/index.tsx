@@ -11,6 +11,10 @@ import SmallPhotoDesktopContainer 			from '../SmallPhotoDesktopContainer';
 import SmallPhotoDesktopContainerReverse 	from '../SmallPhotoDesktopContainerReverse';
 import Photos 								from '../Photos';
 import PullQuote							from '../PullQuote';
+import SectionHead							from '../SectionHead';
+
+// Interfaces
+import { AppPosition } from '../../utils/interfaces';
 
 interface ComponentProps {
 	value: any;
@@ -24,6 +28,7 @@ export interface Mapper {
 	photo: Function;
 	photos: Function;
 	pullquote: Function;
+	sectionhead: Function;
 	renderComponent: Function;
 }
 
@@ -60,7 +65,9 @@ export default {
 
 	pullquote: (object: ComponentProps, key: number) => <PullQuote quote={object.value.quote} source={object.value.source} key={key} />,
 
-	renderComponent: function (object: ComponentProps, key: number) {
-		return object.type && this[object.type] ? this[object.type](object, key) : null;
+	sectionhead: (object: ComponentProps, key: number, appPosition: AppPosition) => <SectionHead appPosition={appPosition} {...object.value} key={key} />,
+
+	renderComponent: function (object: ComponentProps, key: number, appPosition: AppPosition) {
+		return object.type && this[object.type] ? this[object.type](object, key, appPosition) : null;
 	}
 };
