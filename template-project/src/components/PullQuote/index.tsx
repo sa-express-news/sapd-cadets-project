@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import LeftYellowBorder from '../LeftYellowBorder';
+import LeftBorder from '../LeftBorder';
 
 import './PullQuote.scss';
 
@@ -11,9 +11,9 @@ interface Props {
 
 export default ({quote, source}: Props) => (
 	<div className="PullQuoteContainer">
-		<LeftYellowBorder>
+		<LeftBorder>
 			<p className="PullQuote">"{quote}"</p>
 			<p className="PullQuoteAttribution"> - {source}</p>
-		</LeftYellowBorder>
+		</LeftBorder>
 	</div>
 );

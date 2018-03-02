@@ -1,7 +1,8 @@
 @import '../../styles/variables';
 
 div.SectionHead {
-	margin: 0 0 40px;
+	margin: 0 auto;
+	text-align: center;
 
 	hr {
 		border: 0;
@@ -9,6 +10,18 @@ div.SectionHead {
 		width: 10%;
 	    margin: 40px auto;
 	    background-image: linear-gradient(to right, rgba($policeBlue, 0), rgba($policeBlue, 0.75), rgba($policeBlue, 0));
+	}
+
+	img {
+		width: 95%;
+
+		@media (min-width: 768px) {
+	        width: 80%;
+	    }
+
+	    @media (min-width: 1024px) {
+	        width: 60%;
+	    }
 	}
 
 	div.react-parallax {

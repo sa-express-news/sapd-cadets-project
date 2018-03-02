@@ -11,3 +11,5 @@ export interface ComponentPosition {
 	offsetWidth: number;
 	offsetHeight: number;
 }
+
+export type MediaElement = HTMLAudioElement | HTMLVideoElement;

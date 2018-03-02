@@ -12,7 +12,7 @@ interface Props {
 
 export default (props: Props) => (
 	<div className="PhotoInfo">
-		<PhotoCaption text={props.caption}/>
+		<PhotoCaption text={`${props.caption} `}/>
 		<PhotoCutline text={props.cutline}/>
 	</div>
 );

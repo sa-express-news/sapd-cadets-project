@@ -12,6 +12,9 @@ import SmallPhotoDesktopContainerReverse 	from '../SmallPhotoDesktopContainerRev
 import Photos 								from '../Photos';
 import PullQuote							from '../PullQuote';
 import SectionHead							from '../SectionHead';
+import Parallax								from '../Parallax';
+import VideoContainer						from '../VideoContainer';
+import BackgroundVideo						from '../BackgroundVideo';
 
 // Interfaces
 import { AppPosition } from '../../utils/interfaces';
@@ -28,7 +31,10 @@ export interface Mapper {
 	photo: Function;
 	photos: Function;
 	pullquote: Function;
+	parallax: Function;
 	sectionhead: Function;
+	video: Function;
+	backgroundvideo: Function;
 	renderComponent: Function;
 }
 
@@ -65,7 +71,13 @@ export default {
 
 	pullquote: (object: ComponentProps, key: number) => <PullQuote quote={object.value.quote} source={object.value.source} key={key} />,
 
-	sectionhead: (object: ComponentProps, key: number, appPosition: AppPosition) => <SectionHead appPosition={appPosition} {...object.value} key={key} />,
+	parallax: (object: ComponentProps, key: number, appPosition: AppPosition) => <Parallax appPosition={appPosition} {...object.value} key={key} />,
+
+	sectionhead: (object: ComponentProps, key: number) => <SectionHead {...object.value} key={key} />,
+
+	video: (object: ComponentProps, key: number) => <VideoContainer {...object.value} key={key} />,
+
+	backgroundvideo: (object: ComponentProps, key: number, appPosition: AppPosition) => <BackgroundVideo appPosition={appPosition} {...object.value} key={key} />,
 
 	renderComponent: function (object: ComponentProps, key: number, appPosition: AppPosition) {
 		return object.type && this[object.type] ? this[object.type](object, key, appPosition) : null;

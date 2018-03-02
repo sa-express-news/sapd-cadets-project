@@ -2,6 +2,10 @@ import * as _ from 'lodash';
 
 import { AppPosition, ComponentPosition } from './interfaces';
 
+/*******************************************************************
+ * This block of functions is used to autoplay background media
+ *******************************************************************/
+
 // getComponentVisiblity returns the percentage of a component that is currently visible
 export const getComponentVisiblity: Function = (appPosition: AppPosition, componentPosition: ComponentPosition) => {
 	const { pageOffsetX, pageOffsetY, pageWidth, pageHeight } 	= appPosition;
