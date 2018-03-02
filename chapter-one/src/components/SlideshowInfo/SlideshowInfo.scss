@@ -1,0 +1,21 @@
+.SlideshowInfo {
+    background: #333;
+    color: white;
+    opacity: .8;
+    cursor: pointer;
+    padding: .35em .4em;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 24%;
+    text-align: center;
+
+    &.show {
+        display: inline-block;
+    }
+
+    &.hide {
+        display: none;
+    }
+}

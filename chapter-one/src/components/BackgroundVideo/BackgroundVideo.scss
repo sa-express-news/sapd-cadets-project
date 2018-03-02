@@ -1,0 +1,15 @@
+div.BackgroundVideo {
+	margin: 40px auto 0;
+	width: 100%;
+
+    video {
+	    width: 100%;
+	    height: auto;
+	    display: block;
+    }
+
+    video, .caption {
+    	margin: 0 auto;
+    	max-width: 1800px;
+    }
+}

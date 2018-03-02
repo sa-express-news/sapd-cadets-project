@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+
+div.Parallax {
+	margin: 0 0 40px;
+
+	hr {
+		border: 0;
+		height: 1px;
+		width: 10%;
+	    margin: 40px auto;
+	    background-image: linear-gradient(to right, rgba($policeBlue, 0), rgba($policeBlue, 0.75), rgba($policeBlue, 0));
+	}
+
+	div.react-parallax {
+		&:after {
+			content:'';
+			position:absolute;
+			left:0; top:0;
+			width:100%; 
+			height:100%;
+			display:inline-block;
+			//background: linear-gradient(rgba($policeBlue,0.3) 0%, transparent 25%, transparent 75%, rgba($policeBlue,0.2) 100%);
+		}
+	}
+
+	.wrapper {
+		height: 70vh;
+
+		@media (min-width: 768px) {
+		    height: 80vh;
+	    }
+	}
+}
