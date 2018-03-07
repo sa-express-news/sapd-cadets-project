@@ -6,17 +6,19 @@ import FullPhoto 			from '../FullPhoto';
 interface Photo {
 	source: string;
 	caption: string;
-	cutline: string;
 }
+
+import { AppPosition } from '../../utils/interfaces';
 
 interface Props {
 	photos: Array<Photo>;
+	appPosition: AppPosition;
 }
 
-export default ({photos}: Props) => {
-	const components = photos.map((photo: Photo, key: number) => {
-		let photoComponent = <FullPhoto src={photo.source} alt={photo.caption}/>;
-		return <FullPhotoContainer caption={photo.caption} cutline={photo.cutline} key={key}>{photoComponent}</FullPhotoContainer>;
+export default (props: Props) => {
+	const components = props.photos.map((photo: Photo, key: number) => {
+		let photoComponent = <FullPhoto src={photo.source} alt={photo.caption} appPosition={props.appPosition} />;
+		return <FullPhotoContainer caption={photo.caption} key={key}>{photoComponent}</FullPhotoContainer>;
 	});
 
 	return (

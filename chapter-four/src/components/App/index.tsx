@@ -63,7 +63,11 @@ class App extends React.Component<Props, State> {
 				<Top appPosition={appPosition} data={Story.top} seriesNav={Story.seriesnav} />
 				<div className="Story">
 					<Sections sections={Story.sections} appPosition={appPosition} />
-					<SubscribeFooter link="https://myaccount.expressnews.com/dssSubscribe.aspx?pid=889&z=00000"/>
+					<SubscribeFooter
+						link="https://myaccount.expressnews.com/dssSubscribe.aspx?pid=889&z=00000"
+						chapter={Story.top.meta.chapter}
+						seriesNav={Story.seriesnav}
+					/>
 				</div>
 			</div>
 		);

@@ -9,12 +9,14 @@ import SubscribeFooter	from '../SubscribeFooter';
 import './App.scss';
 
 const Story = require('../../story.aml');
+const Bios	= require('../../bios.json');
 
 // Interfaces
 import { AppPosition } from '../../utils/interfaces';
 
 interface State {
 	appPosition: AppPosition;
+	appIsMuted: boolean;
 }
 
 interface Props {}
@@ -31,13 +33,19 @@ class App extends React.Component<Props, State> {
 		super(props);
 		this.state = {
 			appPosition: defaultAppPosition,
+			appIsMuted: false,
 		};
+		this.handleMute = this.handleMute.bind(this);
 	}
 
 	componentDidMount() {
 		window.addEventListener('scroll', this.setAppPosition.bind(this), false);
 		window.addEventListener('resize', this.setAppPosition.bind(this), false);
 		this.setAppPosition();
+	}
+
+	handleMute(appIsMuted: boolean) {
+		this.setState({ appIsMuted });
 	}
 
 	getAppPosition() {
@@ -57,13 +65,17 @@ class App extends React.Component<Props, State> {
 	}
 
 	render() {
-		const { appPosition } = this.state;
+		const { appPosition, appIsMuted } = this.state;
 		return (
 			<div className="App">
-				<Top appPosition={appPosition} data={Story.top} seriesNav={Story.seriesnav} />
+				<Top appPosition={appPosition} data={Story.top} seriesNav={Story.seriesnav} handleMute={this.handleMute} appIsMuted={appIsMuted} />
 				<div className="Story">
-					<Sections sections={Story.sections} appPosition={appPosition} />
-					<SubscribeFooter link="https://myaccount.expressnews.com/dssSubscribe.aspx?pid=889&z=00000"/>
+					<Sections sections={Story.sections} appPosition={appPosition} appIsMuted={appIsMuted} bios={Bios} />
+					<SubscribeFooter
+						link="https://myaccount.expressnews.com/dssSubscribe.aspx?pid=889&z=00000"
+						chapter={Story.top.meta.chapter}
+						seriesNav={Story.seriesnav}
+					/>
 				</div>
 			</div>
 		);

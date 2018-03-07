@@ -45,29 +45,29 @@ export default {
 
 	slideshow: (object: ComponentProps, key: number) => <Slideshow photos={object.value} key={key} />,
 
-	photo: function (object: ComponentProps, key: number) {
+	photo: function (object: ComponentProps, key: number, appPosition: AppPosition) {
 		const photo = object.value;
 		const photoPath = photo.source;
 		switch (photo.type) {
 
 			case 'full':
-				let photoComponent = <FullPhoto src={photoPath} alt={photo.caption} />;
-				return <FullPhotoContainer caption={photo.caption} cutline={photo.cutline} key={key}>{photoComponent}</FullPhotoContainer>;
+				let photoComponent = <FullPhoto src={photoPath} alt={photo.caption} appPosition={appPosition} audio={photo.audio} />;
+				return <FullPhotoContainer caption={photo.caption} key={key}>{photoComponent}</FullPhotoContainer>;
 
 			case 'small-left':
 				let smallPhotoComponent = <SmallPhotoDesktop src={photoPath} alt={photo.caption} />;
-				return <SmallPhotoDesktopContainer caption={photo.caption} cutline={photo.cutline} key={key}>{smallPhotoComponent}</SmallPhotoDesktopContainer>;
+				return <SmallPhotoDesktopContainer caption={photo.caption} key={key}>{smallPhotoComponent}</SmallPhotoDesktopContainer>;
 
 			case 'small-right':
 				let smallPhotoComponentReverse = <SmallPhotoDesktop src={photoPath} alt={photo.caption} />;
-				return <SmallPhotoDesktopContainerReverse caption={photo.caption} cutline={photo.cutline} key={key}>{smallPhotoComponentReverse}</SmallPhotoDesktopContainerReverse>;
+				return <SmallPhotoDesktopContainerReverse caption={photo.caption} key={key}>{smallPhotoComponentReverse}</SmallPhotoDesktopContainerReverse>;
 
 			default:
 				return null;
 		}
 	},
 
-	photos: (object: ComponentProps, key: number) => <Photos photos={object.value} key={key} />,
+	photos: (object: ComponentProps, key: number, appPosition: AppPosition) => <Photos photos={object.value} key={key} appPosition={appPosition} />,
 
 	pullquote: (object: ComponentProps, key: number) => <PullQuote quote={object.value.quote} source={object.value.source} key={key} />,
 

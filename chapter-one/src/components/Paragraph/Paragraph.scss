@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 .Paragraph {
     line-height: 1.25;
     margin: .8em auto;
@@ -34,5 +36,11 @@
         @media (min-width: 768px) {
             font-size: 140px;
         }
+    }
+
+    .bio {
+        border-bottom: 1.5px dashed $policeBlue;
+        color: $policeBlue;
+        cursor: pointer;
     }
 }

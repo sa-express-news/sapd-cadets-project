@@ -1,5 +1,7 @@
+@import '../../styles/variables';
+
 .Button {
-    background: #FCB001;
+    background: $policeYellow;
     cursor: pointer;
     border: none;
     border-radius: 7px;
@@ -7,7 +9,7 @@
     font-family: 'Sanchez', serif;
     font-size: 15px;
     font-weight: bold;
-
+    color: $policeBlue;
 }
 
 .Button:focus{

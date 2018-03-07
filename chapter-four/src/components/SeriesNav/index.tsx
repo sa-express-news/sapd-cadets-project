@@ -2,10 +2,8 @@ import * as React from 'react';
 
 import './SeriesNav.scss';
 
-interface Chapter {
-	chapter: string;
-	desc: string;
-}
+// interfaces
+import { Chapter } from '../../utils/interfaces';
 
 interface Props {
 	chatter: string;

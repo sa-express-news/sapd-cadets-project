@@ -8,7 +8,6 @@ import './Slideshow.scss';
 interface Photo {
 	source: string;
 	caption: string;
-	cutline: string;
 }
 
 interface Props {
@@ -21,6 +20,7 @@ interface State {
 	touchStartX: number;
 	touchStartY: number;
 	lastChange: Date;
+	isInfoHidden: boolean;
 }
 
 class Slideshow extends React.Component<Props, State> {
@@ -32,9 +32,10 @@ class Slideshow extends React.Component<Props, State> {
 			touchStartX: 0,
 			touchStartY: 0,
 			lastChange: new Date(),
+			isInfoHidden: false,
 		};
-		this.moveForward = this.moveForward.bind(this);
-		this.moveBackward = this.moveBackward.bind(this);
+		this.moveForward 		= this.moveForward.bind(this);
+		this.moveBackward 		= this.moveBackward.bind(this);
 	}
 
 	moveForward() {
@@ -45,7 +46,8 @@ class Slideshow extends React.Component<Props, State> {
 
 		this.setState(prevState => ({
 			activeIndex: newIndex,
-			lastChange: new Date()
+			lastChange: new Date(),
+			isInfoHidden: true,
 		}));
 	}
 
@@ -56,7 +58,8 @@ class Slideshow extends React.Component<Props, State> {
 
 		this.setState(prevState => ({
 			activeIndex: newIndex,
-			lastChange: new Date()
+			lastChange: new Date(),
+			isInfoHidden: true,
 		}));
 	}
 
@@ -83,7 +86,6 @@ class Slideshow extends React.Component<Props, State> {
 		if (theTouch.screenX - this.state.touchStartX >= 75) {
 			this.moveForward();
 		}
-
 	}
 
 	shouldComponentUpdate(nextProps: Props, nextState: State) {
@@ -97,16 +99,18 @@ class Slideshow extends React.Component<Props, State> {
 	}
 
 	render() {
+		const { isInfoHidden } = this.state;
 		const slideshowPhotos = this.props.photos.map((photo: Photo, index: number) => {
 			return (
 				<SlideshowPhoto 
 					source={photo.source} 
 					caption={photo.caption}
-					cutline={photo.cutline}
 					moveForward={this.moveForward}
 					moveBackward={this.moveBackward} 
 					handleTouchStart={this.handleTouchStart}
 					handleTouchEnd={this.handleTouchEnd}
+					isInfoHidden={isInfoHidden}
+					slideshowInfoText="CLICK ARROWS TO SEE SLIDESHOW"
 					key={index}
 				/>
 			);

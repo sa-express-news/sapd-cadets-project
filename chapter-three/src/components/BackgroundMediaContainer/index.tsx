@@ -10,7 +10,6 @@ import { AppPosition, ComponentPosition, MediaElement } from '../../utils/interf
 interface State {
 	isPlaying: boolean;
 	isPaused: boolean;
-	ignore: boolean;
 	media: any;
 	instance: any;
 	componentPosition: ComponentPosition;
@@ -21,6 +20,7 @@ interface Props {
 	startFraction: number;
 	endFraction: number;
 	src: string;
+	isLocked?: boolean;
 	muted?: boolean;
 	controls?: boolean;
 }
@@ -40,7 +40,6 @@ class BackgroundMediaContainer extends React.Component<Props, State> {
 		this.state = {
 			isPlaying: false,
 			isPaused: true,
-			ignore: false,
 			media: null,
 			instance: null,
 			componentPosition: defaultComponentPosition,
@@ -56,7 +55,7 @@ class BackgroundMediaContainer extends React.Component<Props, State> {
 	}
 
 	componentDidUpdate(nextProps: Props, nextState: State) {
-		if (nextProps.src && nextState.ignore !== true) {
+		if ((nextProps.src && !this.isMobile()) || nextState.isPlaying) {
 			const { componentPosition, media, instance } 	= this.state;
 			const { appPosition } 							= this.props;
 			if (!_.isEqual(nextState.componentPosition, componentPosition) || !_.isEqual(nextProps.appPosition, appPosition)) {
@@ -68,17 +67,23 @@ class BackgroundMediaContainer extends React.Component<Props, State> {
 		}
 	}
 
-	playIfVisible() {
-		const { startFraction, endFraction, appPosition } 		= this.props;
-		const { isPlaying, isPaused, componentPosition, media }	= this.state;
-		
-		const amountVisible = getComponentVisiblity(appPosition, componentPosition);
+	isMobile() {
+		return window.innerWidth < 768;
+	}
 
-		if (!isPlaying && media.paused && amountVisible > startFraction) {
-			media.play();
-		} else if (!isPaused && !media.paused && amountVisible <= endFraction) {
-			media.pause();
-			media.currentTime = 0;
+	playIfVisible() {
+		const { startFraction, endFraction, appPosition, isLocked } = this.props;
+		const { isPlaying, isPaused, componentPosition, media }		= this.state;
+		
+		if (!isLocked) {
+			const amountVisible = getComponentVisiblity(appPosition, componentPosition);
+
+			if (!isPlaying && media.paused && amountVisible > startFraction) {
+				media.play();
+			} else if (!isPaused && !media.paused && amountVisible <= endFraction) {
+				media.pause();
+				// media.currentTime = 0;
+			}
 		}
 	}
 
@@ -115,12 +120,10 @@ class BackgroundMediaContainer extends React.Component<Props, State> {
 		let { media } = this.state;
 		if (!media) {
 			media = ReactDOM.findDOMNode(this.refs.media);
-			if (window.innerWidth < 768) { // don't autoplay things on mobile
-				this.setState({ media, ignore: true });
-			} else {
+			if (!this.isMobile()) { // don't autoplay things on mobile
 				this.bindMediaEvents(media);
-				this.setState({ media });
-			}
+			} 
+			this.setState({ media });
 		}
 	}
 

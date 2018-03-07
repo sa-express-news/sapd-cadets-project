@@ -9,19 +9,7 @@ import BackgroundAudio	from '../BackgroundAudio';
 import SeriesNav		from '../SeriesNav';
 
 // Interfaces
-import { AppPosition } from '../../utils/interfaces';
-
-interface Chapter {
-	chapter: string;
-	desc: string;
-}
-
-interface SeriesNav {
-	chatter: string;
-	chapters: Array<Chapter>;
-	current: string;
-	show: boolean;
-}
+import { AppPosition, SeriesNavs } from '../../utils/interfaces';
 
 interface Meta {
 	headline: string;
@@ -49,7 +37,7 @@ interface Data {
 interface Props {
 	appPosition: AppPosition;
 	data: Data;
-	seriesNav: SeriesNav;
+	seriesNav: SeriesNavs;
 }
 
 interface State {

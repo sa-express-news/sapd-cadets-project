@@ -1,6 +1,7 @@
 import * as React 	from 'react';
 
 import BackgroundMediaContainer from '../BackgroundMediaContainer';
+import PhotoInfo 				from '../PhotoInfo';
 
 import './BackgroundVideo.scss';
 
@@ -10,27 +11,55 @@ import { AppPosition } from '../../utils/interfaces';
 interface Props {
 	src: string;
 	appPosition: AppPosition;
-	children: any;
+	caption: string;
 	controls?: boolean;
 	muted?: boolean;
 	loop?: boolean;
 }
 
-const isMobile = () => window.innerWidth < 768;
+interface State {
+	isLocked: boolean;
+}
 
-const useControls = (controls: boolean) => isMobile() ? true : controls; 
+class BackgroundVideo extends React.Component<Props, State> {
+	constructor(props: Props) {
+		super(props);
+		this.state = {
+			isLocked: false,
+		};
+		this.handleClick = this.handleClick.bind(this);
+	}
 
-class BackgroundVideo extends React.Component<Props> {
+	handleClick(event: any) {
+		const paused = event.target.paused;
+		if (paused) {
+			event.target.play();
+			this.setState({ isLocked: false });
+		} else { 
+			event.target.pause();
+			this.setState({ isLocked: true });
+		}
+	}
+
 	render() {
-		const { src, controls = false, muted = false, loop = false } = this.props;
+		const {
+			src,
+			caption,
+			controls = true,
+			muted = false,
+			loop = false 
+		} 						= this.props;
+		const { isLocked } 		= this.state;
 		return (
 			<div className="BackgroundVideo">
 				{src && (
-					<BackgroundMediaContainer {...this.props} startFraction={0.8} endFraction={0.2}>
-						<video src={src} muted={muted} loop={loop} preload="auto" controls={useControls(controls)}>
+					<BackgroundMediaContainer {...this.props} startFraction={0.8} endFraction={0.2} isLocked={isLocked}>
+						<video src={src} muted={muted} loop={loop} preload="auto" controls={controls} onClick={this.handleClick}>
 							Your browser does not support the <code>video</code> element.
 						</video>
-						{this.props.children}
+						<div className="caption">
+							<PhotoInfo caption={caption} />
+						</div>
 					</BackgroundMediaContainer>
 				)}
 			</div>

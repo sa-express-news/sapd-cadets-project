@@ -1,7 +1,9 @@
 {top.meta}
 headline: 32 weeks
-subhead: I'm an ideas man, Michael. I think I proved that with "Fuck Mountain." I'M A MONSTER!! Perhaps an attic shall I seek. Smack of ham. What is she doing at a beauty pageant?
-byline: Emilie Eaton | Staff Writer
+subhead: During the first six months of training, the aspiring officers are pushed to their limit and beyond. One of the most grueling parts of the eight-month academy includes tear gas, pepper spray and martial-arts fighting. 
+author: Emilie Eaton
+photos: Lisa Krantz
+presentation: Luke Whyte, Mike Fisher & Kia Farhang
 date: March 8, 2018
 series: The making of a cop
 chapter: Chapter I
@@ -11,23 +13,23 @@ url: https://www.expressnews.com/
 source: https://s.hdnux.com/photos/71/66/01/15163490/3/rawImage.jpg
 caption: Cadet Oscar Cruz does push ups under the watchful eye of instructors at the San Antonio PoliceTraining Academy on Feb. 8, 2017. The cadets began their training on Jan. 23.
 cutline: Lisa Krantz / San Antonio Express-News
-audio: http://www.freesfx.co.uk/rx2/mp3s/6/17981_1464267911.mp3
+audio: https://www.expressnews.com/file/286/4/2864-boxing-seth-no-siren.mp3
 
 {seriesnav}
-chatter: A reporter and a photographer from the San Antonio Express-News spent a year following San Antonio Police Department recruits
+chatter: For "32 weeks", a reporter and a photographer from the San Antonio Express-News spent 8 months embedded with SAPD cadets documenting their experience in the nationally recognized academy.
 [seriesnav.chapters]
 chapter: Chapter I
-desc: This is a description. Here is some more chatter to read.
+desc: Cadets tested for stamina, mental perseverance -- especially on "Hell Day"
 chapter: Chapter II
-desc: This is another description. Here is some more chatter to read.
+desc: After SAPD officer is killed, the perils of policing become evident
 chapter: Chapter III
-desc: This is a third description. Here is some more chatter to read. And even some more just to fuck with your layout.
+desc: Who will wear the badge? 
 chapter: Chapter IV
-desc: This is a fourth description. Here is some more chatter to read. And even some more just to fuck with your layout.
+desc: ‘Here I am’: After two years, one cadet fufills a lifelong dream
 chapter: Chapter V
-desc: This is a fifth description. Here is some more chatter to read.
+desc: ‘Protect and serve’: New officers hit the streets, witnessing dangers firsthand 
 chapter: Photo essay
-desc: This is a photo essay dog.
+desc: Experience the academy through some of our best shots from the field
 []
 {}
 
@@ -91,7 +93,7 @@ caption: Nine cadets discuss why they joined the academy (3:39)
 [+sections.2]
 
 {.sectionhead}
-src: https://s.hdnux.com/photos/71/65/44/15161623/6/rawImage.jpg
+src: https://s.hdnux.com/photos/71/72/56/15182777/4/rawImage.jpg
 {}
 
 {.intrograph}
@@ -113,6 +115,12 @@ For six months, Zimmerman and her husband prayed about it. Zimmerman, now 39, kn
 She would no longer be there to wake them up in the morning, and she wouldn’t be there to help them with their homework at night. 
 
 The eight-step application process to become a San Antonio police officer is stringent. Of those who apply to the academy, roughly only XX are accepted, according to SAPD. 
+
+{.photo}
+source: https://s.hdnux.com/photos/71/66/01/15163489/3/rawImage.jpg
+caption: Cadets get in formation during their final physical training test at the San Antonio Police Training Academy on June 16, 2017.
+type: small-right
+{}
 
 Once in the academy, cadets receive health and medical benefits, and unlike other police academies, which require cadets to pay for their training, cadets at SAPD are paid around $22.50 an hour to attend, in addition to possible hiring bonuses.
 
@@ -136,12 +144,19 @@ But today, as voices echo off the walls, making instructions indiscernible, and 
 
 The soonest a cadet has dropped out? Day two.
 
+{.photo}
+source: https://s.hdnux.com/photos/71/66/01/15163498/3/rawImage.jpg
+caption: Sandra Zimmerman takes a break after boxing in a ring during Hell Day on June 29, 2017, at the San Antonio Police Training Academy. Instructors simulate stress using exercises, flashing police lights and loud music before and during the fights between cadets.
+type: full
+audio: https://www.expressnews.com/file/286/7/2867-zimmerman-out-of-breath.mp3
+{}
+
 []
 
 [+sections.3]
 
 {.sectionhead}
-src: https://s.hdnux.com/photos/71/65/44/15161623/6/rawImage.jpg
+src: https://s.hdnux.com/photos/71/72/56/15182777/4/rawImage.jpg
 {}
 
 {.intrograph}
@@ -166,12 +181,18 @@ Later, the class watches a 2007 video from Santa Fe, New Mexico, where an office
 
 “I’m sure any of those officers would fight off a suspect for their fellow officers,” McKay says. “But they wouldn’t stand up to save their colleague’s career.” 
 
+{.photo}
+source: https://s.hdnux.com/photos/71/66/01/15163493/3/rawImage.jpg
+caption: A week and a half into the academy training, Sandra Zimmerman kept a photo of her daughters near her at the San Antonio Police Training Academy on Feb. 1, 2017. Zimmerman was a special education teacher before joining the academy and was one of the oldest cadets.
+type: full
+{}
+
 []
 
 [+sections.4]
 
 {.sectionhead}
-src: https://s.hdnux.com/photos/71/65/44/15161623/6/rawImage.jpg
+src: https://s.hdnux.com/photos/71/72/56/15182777/4/rawImage.jpg
 {}
 
 {.intrograph}
@@ -192,14 +213,27 @@ In the next two hours, the cadets do hundreds of push-ups, sit-ups, leg lifts, j
 
 When a cadet can’t finish, another finishes the task.
 
-No one is left behind, here or on the streets. 
+No one is left behind, here or on the streets.
+
+[.slideshow]
+
+source: https://s.hdnux.com/photos/71/66/01/15163484/3/rawImage.jpg
+caption: Trevor Yannutz runs past the Memorial Wall for fallen officers of the department during physical training at the San Antonio Police Training Academy on Feb. 8, 2017.
+
+source: https://s.hdnux.com/photos/71/66/01/15163491/3/rawImage.jpg
+caption: Cadet David Terrell catches his breath during a physical training session on Feb. 8, 2017, at the San Antonio Police Training Academy. The cadets had begun the academy about two and a half weeks earlier.
+
+source: https://s.hdnux.com/photos/71/66/01/15163496/3/rawImage.jpg
+caption: Marshall Shepard throws up during physical training as other cadets run towards the track at the San Antonio Police Training Academy on Feb. 8, 2017.
+
+[]
 
 []
 
 [+sections.5]
 
 {.sectionhead}
-src: https://s.hdnux.com/photos/71/65/44/15161623/6/rawImage.jpg
+src: https://s.hdnux.com/photos/71/72/56/15182777/4/rawImage.jpg
 {}
 
 {.intrograph}
@@ -210,6 +244,12 @@ In their first few weeks at the academy, cadets are prohibited from drinking any
 
 But most importantly, the instructors emphasize that cadets cannot take supplements. 
 
+{.photo}
+type: full
+source: https://s.hdnux.com/photos/71/66/01/15163500/3/rawImage.jpg
+caption: Alyssa Hernandez gets checked out after her boxing match during Hell Day at the San Antonio Police Training Academy on June 29, 2017.
+{}
+
 In 1994, a cadet who was going through the strenuous academy training died here.
 
 Cause of death? He didn’t know how to take supplements correctly.
@@ -219,7 +259,7 @@ Cause of death? He didn’t know how to take supplements correctly.
 [+sections.6]
 
 {.sectionhead}
-src: https://s.hdnux.com/photos/71/65/44/15161623/6/rawImage.jpg
+src: https://s.hdnux.com/photos/71/72/56/15182777/4/rawImage.jpg
 {}
 
 {.intrograph}
@@ -232,6 +272,13 @@ The exercise has a purpose. On the street, criminals don’t fight fairly. While
 
 They need to know how to take one, too.
 
+{.photo}
+source: https://s.hdnux.com/photos/71/66/01/15163497/3/rawImage.jpg
+caption: Franklin Millstid, left, boxes with Oscar Cruz during Hell Day at the San Antonio Police Training Academy on June 29, 2017. Hell Day is dreaded as the hardest day of their training. At right, Officer Juan Hinojosa, mediates the fight.
+type: full
+audio: https://www.expressnews.com/file/286/6/2866-get-him-off.mp3
+{}
+
 When the body is presented with a perceived threat, it goes into a state of hyperarousal, the fight-or-flight response. The body releases extra cortisol and adrenaline, which makes the heart rate increase and causes the person to experience hearing loss and tunnel vision. 
 
 Cadets need to learn how to deal with those physiological symptoms so they are still completely aware and in control when they are interacting with a suspect once they are in the field. 
@@ -240,7 +287,7 @@ It’s also an exercise of stamina. Instructors here talk about being punched, k
 
 One time, officer Juan Hinojosa, a physical training instructor, was fighting with a suspect when the suspect’s girlfriend came up behind him and whacked him in the head with a candlestick holder. Hinojosa almost passed out. 
 
-On average, it takes two to three minutes for backup to arrive to a scene, SAPD says. Cadets need to learn how to push through the pain and fatigue when necessary. 
+On average, it takes two to three minutes for backup to arrive to a scene, SAPD says. Cadets need to learn how to push through the pain and fatigue when necessary.
 
 Harvey Hedden, a former police chief in Paddock Lake, Wisconsin, and executive director of the International Law Enforcement Educators and Trainers Association, said a number of training academies simulate stress and do role-playing scenarios so officers are prepared in the field. 
 
@@ -250,13 +297,29 @@ The trick, Hedden said, is teaching an officer when force is appropriate and how
 
 He said it takes time for the brain to process what’s happening during a high-stress situation. Officers often get in trouble when they continue using force, even though the suspect has stopped. 
 
-“Officers are human beings, and human beings are fraught with problems. Some have reactions that are slower than others. Sometimes they are going to make errors,” Hedden said. 
+“Officers are human beings, and human beings are fraught with problems. Some have reactions that are slower than others. Sometimes they are going to make errors,” Hedden said.
 
-The viewer has the benefit of being able to freeze that video, but the officer doesn’t have that luxury, he added. 
+The viewer has the benefit of being able to freeze that video, but the officer doesn’t have that luxury, he added.
+
+[.slideshow]
+
+source: https://s.hdnux.com/photos/71/66/01/15163480/3/rawImage.jpg
+caption: Amber Schafer, left, and Jessica Cruz-Villareal fight in the ring on boxing day at the San Antonio Police Training Academy on April 5, 2017.
+
+source: https://s.hdnux.com/photos/71/66/01/15163485/3/rawImage.jpg
+caption: Officer Aisha Jackson talks to Jocelyne Alvarez after her boxing match during Hell Day on June 29, 2017, at the San Antonio Police Training Academy.
+
+source: https://s.hdnux.com/photos/71/66/01/15163486/3/rawImage.jpg
+caption: Amber Schafer, right, and Sandra Zimmerman fight during training at the San Antonio Police Training Academy on May 18, 2017.
+
+source: https://s.hdnux.com/photos/71/66/01/15163487/3/rawImage.jpg
+caption: Officer Aisha Jackson talks with the four remaining female cadets Sandra Zimmerman, from left, Jessica Cruz-Villarreal, Alyssa Hernandez and Jocelyne Alvarez during a break from boxing on May 18, 2017, at the San Antonio Police Training Academy.
+
+[]
 
 At the San Antonio police academy, instructors strictly enforce when it’s appropriate to fight and when it’s imperative to stop. When one cadet continues punching his opponent after the whistle has blown, physical training instructor Robert Moreno, one of the longest-serving officers at SAPD with nearly 40 years of experience, pulls him off his opponent and throws him against the ring, chastising him. 
 
-Meanwhile, Alvarez, who has never fought before, prepares to hop into the ring. An instructor approaches her. 
+Meanwhile, <bio>Alvarez</bio>, who has never fought before, prepares to hop into the ring. An instructor approaches her. 
 
 “Alvarez, have you ever been hit in the face before?” Alvarez recalls the instructor asking. 
 
@@ -278,14 +341,19 @@ Cadets emerge from the ring sweating, breathing laboriously, with broken noses a
 
 After her fight, Alvarez sits on the ground next to the wooden bleachers. She’s drenched in sweat and looks tired. Four cadets sit or stand around her, including Zimmerman. 
 
-One tells a joke and the group laughs. As soon as the fighting ends, they are comrades again. 
+One tells a joke and the group laughs. As soon as the fighting ends, they are comrades again.
+
+{.parallax}
+source: https://s.hdnux.com/photos/71/66/01/15163507/3/rawImage.jpg
+caption: Officer Daniel Loudermilk resists Trevor Yannutz as Yannutz searches him for weapons before night tactics training on July 27, 2017.
+{}
 
 []
 
 [+sections.7]
 
 {.sectionhead}
-src: https://s.hdnux.com/photos/71/65/44/15161623/6/rawImage.jpg
+src: https://s.hdnux.com/photos/71/72/56/15182777/4/rawImage.jpg
 {}
 
 {.intrograph}
@@ -300,6 +368,12 @@ The “newer” bodies have marbleized skin, caused by gas passing through the b
 
 The “older” bodies, meanwhile, are sunken and black, with bones protruding through the rotting flesh. In some, the mouths are wide open and display fully intact, white teeth. This is caused by maggots eating the flesh, forcing the jaw bone to drop.
 
+{.photo}
+source: https://s.hdnux.com/photos/71/66/01/15163502/3/rawImage.jpg
+caption: Cadet Ariel Loera looks at a decomposing body at the Texas State University Forensic Anthropology Research Facility, which he visited with his cadet class near San Marcos on May 5, 2017. The facility is a 26-acre outdoor human decomposition research laboratory.
+type: full
+{}
+
 Today, Lauren Mechkel, acting coordinator of the 26-acre forensic anthropology center run by Texas State University, is giving Loera and his classmates a tour. 
 
 The staff regularly gives such tours, showing officers how to determine how long a body has been left outside and the difference between human bones and animal bones. 
@@ -310,12 +384,17 @@ Each cadet reacts to the bodies in different ways. Some, like Loera, look on in 
 
 “That was awesome,” one cadet says later, as he exits the farm.
 
+{.backgroundvideo}
+caption: Cadet Loera talks about going to Holmes High school and seeing people he grew up with when he worked at jail. Talks about struggles when he was younger and finding his way to law enforcement. (1:05)
+src: https://cdn.jwplayer.com/videos/fmngVx8M-fqGI5ZfY.mp4
+{}
+
 []
 
 [+sections.8]
 
 {.sectionhead}
-src: https://s.hdnux.com/photos/71/65/44/15161623/6/rawImage.jpg
+src: https://s.hdnux.com/photos/71/72/56/15182777/4/rawImage.jpg
 {}
 
 {.intrograph}
@@ -338,12 +417,18 @@ The cadets march behind the wall, and as each name is read, they slowly release 
 
 This is the reality of the job. 
 
+{.photo}
+source: https://s.hdnux.com/photos/71/66/01/15163495/3/rawImage.jpg
+caption: Nicholas Espinoza holds the United States flag before raising it for the fallen officer police memorial held at the San Antonio PoliceTraining Academy on May 5, 2017. The Memorial Wall for the fallen officers from the department is the centerpiece of the academy's courtyard. Espinoza left the academy close to 10 weeks later, shortly after attending the funeral for Officer Miguel Moreno, who was shot and killed in the line of duty.
+type: full
+{}
+
 []
 
 [+sections.9]
 
 {.sectionhead}
-src: https://s.hdnux.com/photos/71/65/44/15161623/6/rawImage.jpg
+src: https://s.hdnux.com/photos/71/72/56/15182777/4/rawImage.jpg
 {}
 
 {.intrograph}
@@ -351,6 +436,12 @@ text: Cadet Zimmerman sits in the passenger seat of a newer police cruiser when 
 {}
 
 This is Zimmerman’s fourth ride-along — a training requirement set by the academy. Today, she’s paired up with Officer Justin Carrion, a three-year veteran of the force. The two decide to respond to the possible break-in at Carver Academy. 
+
+{.photo}
+source: https://s.hdnux.com/photos/71/66/01/15163479/3/rawImage.jpg
+caption: Cody Morrison, from left, Oscar Cruz and Daniel Berrios check their surroundings during a firearm drill at the handgun range at the San Antonio Police Training Academy on June 24, 2017.
+type: small-right
+{}
 
 As they arrive on scene, Zimmerman hops out of the vehicle and follows Carrion toward the building. They walk around the perimeter of the school, looking for signs of forced entry. 
 
@@ -369,7 +460,7 @@ She goes down the list: She’s helped arrest teenagers accused of a break-in, c
 [+sections.10]
 
 {.sectionhead}
-src: https://s.hdnux.com/photos/71/65/44/15161623/6/rawImage.jpg
+src: https://s.hdnux.com/photos/71/72/56/15182777/4/rawImage.jpg
 {}
 
 {.intrograph}
@@ -383,6 +474,19 @@ The gear probably weighs around 15 pounds — in the field, it will weigh anothe
 There’s one problem. Mendez doesn’t know how to swim.
 
 “Don’t think about it!” officer Moreno yells. “Just do it!”
+
+[.slideshow]
+
+source: https://s.hdnux.com/photos/71/66/01/15163488/3/rawImage.jpg
+caption: David Terrell is splashed by fellow cadets as he works to remove his vest and jacket under water at the Palo Alto College pool on June 6, 2017.
+
+source: https://s.hdnux.com/photos/71/66/01/15163482/3/rawImage.jpg
+caption: Cadets support Oscar Cruz, center, as he works to take off his vest and jacket under water at the Palo Alto College pool on June 6, 2017.
+
+source: https://s.hdnux.com/photos/71/66/01/15163483/3/rawImage.jpg
+caption: Cadets support Oscar Cruz, center, as he works to take off his vest and jacket under water at the Palo Alto College pool on June 6, 2017.
+
+[]
 
 At SAPD, the training is constantly evolving. Instructors added aquatic training into the curriculum after officer Patricia R. Calderon drowned in 1988 while chasing a suspect into a creek. 
 
@@ -399,7 +503,7 @@ He knows full well the risks. Mendez’s mother went to high school with Caldero
 [+sections.11]
 
 {.sectionhead}
-src: https://s.hdnux.com/photos/71/65/44/15161623/6/rawImage.jpg
+src: https://s.hdnux.com/photos/71/72/56/15182777/4/rawImage.jpg
 {}
 
 {.intrograph}
@@ -412,6 +516,12 @@ But everyone finished.
 
 After showering, the cadets gather in the gym to review the day’s events. The instructors congratulate them on finishing but warn that this is just the beginning. 
 
+{.photo}
+source: https://s.hdnux.com/photos/71/66/01/15163494/3/rawImage.jpg
+type: full
+caption: Cadets Philipp Dmitriev, left, and Matthew Miller, right, hold up cadet Franklin Millstid after their 200 meter sprint on the track for their final PT test on June 16, 2017, at the San Antonio Police Training Academy. Cadets are also timed as they run a mile and half around the track for the test. At left is instructor Officer Dezi Rios
+{}
+
 Eleven weeks of training remain.
 
 “This is one more step,” said Sgt. Tina Baron, who now oversees training at the academy. “Keep taking them.”
@@ -422,7 +532,12 @@ Two San Antonio police officers, while on directed patrol north of downtown, hav
 
 Trevino, the instructor, apologizes to the class and explains what happened. The details are sparse. The cadets look across the gym, anxious to learn more. 
 
-After concluding their remarks, the instructors dismiss the cadets for the day. The cadets walk over to the cafeteria to celebrate Daniel Berrios’ birthday. He turned 40 that day, and had to complete 40 push-ups in the makeshift gas chamber as they were being exposed to tear gas.
+After concluding their remarks, the instructors dismiss the cadets for the day. The cadets walk over to the cafeteria to celebrate Daniel <bio>Berrios</bio>’ birthday. He turned 40 that day, and had to complete 40 push-ups in the makeshift gas chamber as they were being exposed to tear gas.
+
+{.backgroundvideo}
+src: https://cdn.jwplayer.com/videos/ArirJ26Z-fqGI5ZfY.mp4
+caption: Berrios is the oldest cadet so he talks about what that was like and his birthday when he had to do 40 pushups in the gas chamber. (2:33)
+{}
 
 In the cafeteria, the cadets sing him “Happy Birthday” and pull out some store-bought cupcakes. They begin digging in, talking about the day’s events. 
 

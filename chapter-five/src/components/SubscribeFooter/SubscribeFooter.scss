@@ -1,6 +1,8 @@
+@import '../../styles/variables';
+
 .SubscribeFooter {
     padding: .25em 0em;
-    background: #E5E5E5;
+    background: $policeBlue;
     font-family: 'Sanchez', serif;
     font-weight: normal;
     text-align: center;
@@ -15,7 +17,13 @@
     font-family: 'Suez One', serif;
 }
 
-.SubscribeFooter>div {
+.SubscribeFooter {
+    h4, p {
+        color: white;
+    }
+}
+
+.SubscribeFooter > div {
     margin: 0 auto;
     width: 80%;
 }
