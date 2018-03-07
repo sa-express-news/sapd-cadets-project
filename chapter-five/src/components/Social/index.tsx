@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 import FacebookLogo from './FacebookLogo';
-import TwitterLogo from './TwitterLogo';
-import RedditLogo from './RedditLogo';
+import TwitterLogo 	from './TwitterLogo';
+import RedditLogo 	from './RedditLogo';
 
 import './Social.scss';
 
@@ -43,7 +43,6 @@ class Social extends React.Component<Props> {
 
 	buildIcon(type: string) {
 		const Icon = components[type];
-		// $FlowFixMe
 		const link = this[`${type}Link`]();
 		return <a href={link} target="_blank"><Icon /></a>;
 	}

@@ -1,6 +1,9 @@
+@import '../../styles/variables';
+
 div.Hero {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	background-color: $policeBlue;
 	width: 100vw;
 }

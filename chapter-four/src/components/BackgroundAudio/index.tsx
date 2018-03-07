@@ -10,6 +10,7 @@ interface Props {
 	appPosition: AppPosition;
 	startFraction: number;
 	endFraction: number;
+	appIsMuted: boolean;
 	children: any;
 	loop?: boolean;
 }
@@ -21,12 +22,12 @@ class BackgroundAudio extends React.Component<Props> {
 	}
 
 	render() {
-		const { src } = this.props;
+		const { src, appIsMuted } = this.props;
 		return (
 			<div className="BackgroundAudio">
 				<BackgroundMediaContainer {...this.props}>
 					{src && (
-						<audio src={src} loop={this.loopAudio()}>
+						<audio src={src} loop={this.loopAudio()} muted={appIsMuted}>
 							Your browser does not support the <code>audio</code> element.
 						</audio>
 					)}

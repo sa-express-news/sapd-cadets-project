@@ -15,6 +15,7 @@ interface Props {
 	source: string;
 	caption: string;
 	appPosition: AppPosition;
+	appIsMuted: boolean;
 	audio?: string;
 }
 
@@ -24,7 +25,7 @@ const getAudio = (audio: string = '') => audio;
 
 export default (props: Props) => (
 	<div className="Parallax">
-		<BackgroundAudio src={getAudio(props.audio)} appPosition={props.appPosition} startFraction={0.8} endFraction={0.2}>
+		<BackgroundAudio src={getAudio(props.audio)} appPosition={props.appPosition} appIsMuted={props.appIsMuted} startFraction={0.8} endFraction={0.2}>
 			{!isMobile() && (
 				<div>
 					<Parallax bgImage={props.source} strength={500}>
@@ -37,7 +38,7 @@ export default (props: Props) => (
 			)}
 			{isMobile() && (
 				<FullPhotoContainer caption={props.caption}>
-					<FullPhoto src={props.source} alt={props.caption} appPosition={props.appPosition} />
+					<FullPhoto src={props.source} alt={props.caption} appPosition={props.appPosition} appIsMuted={props.appIsMuted}  />
 				</FullPhotoContainer>
 			)}
 		</BackgroundAudio>

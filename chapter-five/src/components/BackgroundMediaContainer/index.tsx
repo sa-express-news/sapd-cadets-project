@@ -10,6 +10,7 @@ import { AppPosition, ComponentPosition, MediaElement } from '../../utils/interf
 interface State {
 	isPlaying: boolean;
 	isPaused: boolean;
+	isVisible: boolean;
 	media: any;
 	instance: any;
 	componentPosition: ComponentPosition;
@@ -20,7 +21,6 @@ interface Props {
 	startFraction: number;
 	endFraction: number;
 	src: string;
-	isLocked?: boolean;
 	muted?: boolean;
 	controls?: boolean;
 }
@@ -40,6 +40,7 @@ class BackgroundMediaContainer extends React.Component<Props, State> {
 		this.state = {
 			isPlaying: false,
 			isPaused: true,
+			isVisible: false,
 			media: null,
 			instance: null,
 			componentPosition: defaultComponentPosition,
@@ -72,18 +73,18 @@ class BackgroundMediaContainer extends React.Component<Props, State> {
 	}
 
 	playIfVisible() {
-		const { startFraction, endFraction, appPosition, isLocked } = this.props;
-		const { isPlaying, isPaused, componentPosition, media }		= this.state;
+		const { startFraction, endFraction, appPosition } 					= this.props;
+		const { isPlaying, isPaused, isVisible, componentPosition, media }	= this.state;
 		
-		if (!isLocked) {
-			const amountVisible = getComponentVisiblity(appPosition, componentPosition);
+		const amountVisible = getComponentVisiblity(appPosition, componentPosition);
 
-			if (!isPlaying && media.paused && amountVisible > startFraction) {
-				media.play();
-			} else if (!isPaused && !media.paused && amountVisible <= endFraction) {
-				media.pause();
-				// media.currentTime = 0;
-			}
+		if (!isPlaying && !isVisible && media.paused && amountVisible > startFraction) {
+			media.play();
+			this.setState({ isVisible: true });
+		} else if (!isPaused && !media.paused && amountVisible <= endFraction) {
+			media.pause();
+			this.setState({ isVisible: false });
+			// media.currentTime = 0;
 		}
 	}
 

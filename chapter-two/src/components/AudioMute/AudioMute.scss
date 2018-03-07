@@ -1,0 +1,26 @@
+@import 'node_modules/express-news-styleguide/init-base';
+@import '../../styles/variables';
+
+.AudioMute {
+    cursor: pointer;
+    float: left;
+}
+
+.AudioMute img {
+    background: transparent;
+    padding: 4px 2px;
+    margin: 9px 0 3px;
+    width: 1.4em;
+
+    @include mediaquery($default-tablet) {
+        width: 1.6em;
+    }
+}
+
+.AudioMute img {
+    transition: color 1s linear;
+}
+
+.AudioMute:hover img{
+    color: #FCB001;
+}

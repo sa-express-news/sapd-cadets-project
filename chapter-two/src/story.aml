@@ -1,40 +1,42 @@
 {top.meta}
 headline: 32 weeks
-subhead: I'm an ideas man, Michael. I think I proved that with "Fuck Mountain." I'M A MONSTER!! Perhaps an attic shall I seek. Smack of ham. What is she doing at a beauty pageant?
-byline: Emilie Eaton | Staff Writer
+subhead: At the funeral of SAPD officer Miguel Moreno, the cadets learn firsthand the perils of policing.
+author: Emilie Eaton
+photos: Lisa Krantz
+presentation: Luke Whyte, Mike Fisher & Kia Farhang
 date: March 8, 2018
 series: The making of a cop
-chapter: Chapter II
+chapter: Chapter II: Tragedy in blue
 url: https://www.expressnews.com/
 
 {top.hero}
-source: https://s.hdnux.com/photos/66/67/27/14382548/8/rawImage.jpg
-caption: St. Anthony's Charles Bassey leaves the school.
-cutline: Edward A. Ornelas / San Antonio Express-News
-audio: http://www.freesfx.co.uk/rx2/mp3s/6/17981_1464267911.mp3
+source: https://s.hdnux.com/photos/71/74/53/15190754/3/rawImage.jpg
+caption: Cadets stand outside for the funeral of Officer Miguel Moreno on July 7, 2017 at Community Bible Church. Moreno was shot on duty as the cadets went through their Hell Day one week earlier.
+cutline: Lisa Krantz / San Antonio Express-News
+audio: https://www.expressnews.com/file/286/9/2869-soft-wind.mp3
 
 {seriesnav}
-chatter: A reporter and a photographer from the San Antonio Express-News spent a year following San Antonio Police Department recruits
+chatter: For "32 weeks", a reporter and a photographer from the San Antonio Express-News spent 8 months embedded with SAPD cadets documenting their experience in the nationally recognized academy.
 [seriesnav.chapters]
 chapter: Chapter I
-desc: This is a description. Here is some more chatter to read.
+desc: What cadets endure on ‘Hell Day’
 chapter: Chapter II
-desc: This is another description. Here is some more chatter to read.
+desc: Tragedy in blue
 chapter: Chapter III
-desc: This is a third description. Here is some more chatter to read. And even some more just to fuck with your layout.
+desc: Who will wear the badge? 
 chapter: Chapter IV
-desc: This is a fourth description. Here is some more chatter to read. And even some more just to fuck with your layout.
+desc: ‘Here I am’
 chapter: Chapter V
-desc: This is a fifth description. Here is some more chatter to read.
+desc: Out on the streets 
 chapter: Photo essay
-desc: This is a photo essay dog.
+desc: A collection of our best project images
 []
 {}
 
 [+sections.1]
 
 {.sectionhead}
-src: https://s.hdnux.com/photos/71/65/44/15161623/6/rawImage.jpg
+src: https://s.hdnux.com/photos/71/72/56/15182777/4/rawImage.jpg
 {}
 
 {.intrograph}
@@ -51,7 +53,7 @@ He pauses.
 
 “Sorry for that,” he adds, alluding to the expletive. Everyone chuckles, though several look on, wary of what’s to come. 
 
-For the last seven months, Yannutz and his classmates at the academy have trained five days a week, nine hours a day in hopes of becoming a San Antonio police officer. They’ve learned how to administer CPR, how to handle a mental health crisis and how to fight.
+For the last seven months, <bio>Yannutz</bio> and his classmates at the academy have trained five days a week, nine hours a day in hopes of becoming a San Antonio police officer. They’ve learned how to administer CPR, how to handle a mental health crisis and how to fight.
 
 It’s been a rough few weeks for the cadets. Exactly a week ago, on “Hell Day,” they had to fight each other, leaving several with bloody noses and bruised faces. They also experienced the blistering pain of tear gas and pepper spray. 
 
@@ -59,7 +61,14 @@ Later that same day, as they celebrated a classmate’s birthday and completion 
 
 The cadets have two months of academy instruction left. They still have to get through three weeks of hands-on training focused on firearms, tactics and driving and pass the Texas Commission on Law Enforcement test to become a certified peace officer. 
 
-If they succeed, they’ll be on the street in September — gun and Taser in hand — learning alongside a field training officer. 
+If they succeed, they’ll be on the street in September — gun and Taser in hand — learning alongside a field training officer.
+
+{.photo}
+source: https://s.hdnux.com/photos/71/74/53/15190755/3/rawImage.jpg
+caption: Tactics instructor officer Juan Mandujano tases Daniel Berrios at the San Antonio Police Training Academy on July 5, 2017.
+audio: https://www.expressnews.com/file/287/0/2870-taser-short.mp3
+type: full
+{}
 
 Yannutz, 23, hasn’t always wanted to be a police officer. For four years, he studied exercise and sport science while working as a personal trainer at various gyms. 
 
@@ -81,13 +90,26 @@ A third benefit: If an officer is ever sued for use of excessive force, it could
 
 In total, 13 cadets, out of 32 still in the class, choose the six-second shock.
 
-When cadet Sandra Zimmerman volunteers to get tased, she asks a fellow cadet to record it. She wants to prove to her daughters that she went through with it.
+When cadet Sandra <bio>Zimmerman</bio> volunteers to get tased, she asks a fellow cadet to record it. She wants to prove to her daughters that she went through with it.
 
 Zimmerman stands with her back to officer Aisha Jackson, who holds the yellow Taser by her side. The crackle of the weapon fills the room. 
 
 “Shiiiiittt,” Zimmerman mumbles under her breath, as the spotters lower her body to the ground. Then she relaxes and, after a few seconds, stands up. 
 
 “I made it worse in my head than it actually was,” she says, smiling.
+
+[.slideshow]
+
+source: https://s.hdnux.com/photos/71/74/53/15190760/3/rawImage.jpg
+caption: Jocelyne Alvarez is tested during a scenario to decide whether to use a Taser as an instructor portrays a suicidal man at the San Antonio Police Training Academy on July 6, 2017. Cadets also have a week of Crisis Intervention Training focused on mental health.
+
+source: https://s.hdnux.com/photos/71/74/53/15190756/3/rawImage.jpg
+caption: Jessica Cruz-Villarreal, left, and Alyssa Hernandez support Franklin Millstid after he was tased by officer Daniel Loudermilk at the San Antonio Police Training Academy on July 5, 2017.
+
+source: https://s.hdnux.com/photos/71/74/53/15190759/3/rawImage.jpg
+caption: Jocelyne Alvarez, left, and Alyssa Hernandez practice techniques they learned during Hell Day with their cadet class at the San Antonio Police Training Academy on June 29, 2017.
+
+[]
 
 Later, cadets gather at a tactical training village that is located on the academy’s 165-acre campus. The village has paved streets and six small buildings, complete with props and furniture, made to look like a store, bar, warehouse and a house. 
 
@@ -101,7 +123,13 @@ Meanwhile, the man who called 911 is behind the officer. He yells, touches the o
 
 In some of the scenarios, the friend turns the gun on the officer. The officer has to choose whether to use his handgun or his Taser. 
 
-A Taser, though less deadly, malfunctions and doesn’t always land accurately on its target. A gun could lead to death. 
+A Taser, though less deadly, malfunctions and doesn’t always land accurately on its target. A gun could lead to death.
+
+{.photo}
+source: https://s.hdnux.com/photos/71/74/53/15190753/3/rawImage.jpg
+caption: Tactics instructor officer Juan Mandujano, right, jokes with Jessica Cruz-Villarreal after she was tased at the San Antonio Police Training Academy on July 5, 2017.
+type: small-right
+{}
 
 For every example of an officer using too much force, there is another example of the officer who waited too long. Officers are trained to try to deescalate a situation first, but sometimes, as events are unfolding in split seconds, that’s not possible. 
 
@@ -122,7 +150,7 @@ Tomorrow, the cadets will attend Moreno’s funeral.
 [+sections.2]
 
 {.sectionhead}
-src: https://s.hdnux.com/photos/71/65/44/15161623/6/rawImage.jpg
+src: https://s.hdnux.com/photos/71/72/56/15182777/4/rawImage.jpg
 {}
 
 {.intrograph}
@@ -134,6 +162,16 @@ The photos show a vibrant, young man — often with a wide smile that shows off 
 Moreno, 32, was shot and killed north of downtown exactly a week ago. Today, thousands of friends, family and well-wishers have gathered to remember his life and service.
 
 On the far side of the sanctuary, dozens of cadets dressed in bright blue uniforms sit and solemnly watch. 
+
+[.slideshow]
+
+source: https://s.hdnux.com/photos/71/74/53/15190758/3/rawImage.jpg
+caption: Cadets stand outside for the funeral of Officer Miguel Moreno on July 7, 2017 at Community Bible Church. Moreno was shot on duty as the cadets went through their Hell Day one week earlier.
+
+source: https://s.hdnux.com/photos/71/74/53/15190757/3/rawImage.jpg
+caption: Cadets attend the funeral for Officer Miguel Moreno on July 7, 2017, at Community Bible Church. Moreno was shot on duty as the cadets went through their Hell Day one week earlier.
+
+[]
 
 For the past 22 weeks, they’ve been warned about the dangers of the job. At the academy where they train, the perils are everywhere. During exercises, instructors regularly stress the importance of training, asking the class if they want to make it home at the end of their shift.
 

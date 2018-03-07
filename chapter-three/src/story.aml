@@ -1,33 +1,35 @@
 {top.meta}
 headline: 32 weeks
-subhead: I'm an ideas man, Michael. I think I proved that with "Fuck Mountain." I'M A MONSTER!! Perhaps an attic shall I seek. Smack of ham. What is she doing at a beauty pageant?
-byline: Emilie Eaton | Staff Writer
+subhead: Tear gas, pepper spray and martial-arts fighting are among the grueling tests on the worst day of training.
+author: Emilie Eaton
+photos: Lisa Krantz
+presentation: Luke Whyte, Mike Fisher & Kia Farhang
 date: March 8, 2018
 series: The making of a cop
-chapter: Chapter III
+chapter: Chapter I: What cadets endure on ‘Hell Day’
 url: https://www.expressnews.com/
 
 {top.hero}
-source: https://s.hdnux.com/photos/66/67/27/14382548/8/rawImage.jpg
-caption: St. Anthony's Charles Bassey leaves the school.
-cutline: Edward A. Ornelas / San Antonio Express-News
-audio: http://www.freesfx.co.uk/rx2/mp3s/6/17981_1464267911.mp3
+source: https://s.hdnux.com/photos/71/66/01/15163490/3/rawImage.jpg
+caption: Cadet Oscar Cruz does push ups under the watchful eye of instructors at the San Antonio PoliceTraining Academy on Feb. 8, 2017. The cadets began their training on Jan. 23.
+cutline: Lisa Krantz / San Antonio Express-News
+audio: https://www.expressnews.com/file/286/4/2864-boxing-seth-no-siren.mp3
 
 {seriesnav}
-chatter: A reporter and a photographer from the San Antonio Express-News spent a year following San Antonio Police Department recruits
+chatter: For "32 weeks", a reporter and a photographer from the San Antonio Express-News spent 8 months embedded with SAPD cadets documenting their experience in the nationally recognized academy.
 [seriesnav.chapters]
 chapter: Chapter I
-desc: This is a description. Here is some more chatter to read.
+desc: What cadets endure on ‘Hell Day’
 chapter: Chapter II
-desc: This is another description. Here is some more chatter to read.
+desc: Tragedy in blue
 chapter: Chapter III
-desc: This is a third description. Here is some more chatter to read. And even some more just to fuck with your layout.
+desc: Who will wear the badge? 
 chapter: Chapter IV
-desc: This is a fourth description. Here is some more chatter to read. And even some more just to fuck with your layout.
+desc: ‘Here I am’
 chapter: Chapter V
-desc: This is a fifth description. Here is some more chatter to read.
+desc: Out on the streets 
 chapter: Photo essay
-desc: This is a photo essay dog.
+desc: A collection of our best project images
 []
 {}
 

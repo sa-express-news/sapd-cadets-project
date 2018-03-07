@@ -6,7 +6,9 @@ interface Props {
 	headline: string;
 	subhead: string;
 	chapter: string;
-	byline: string;
+	author: string;
+	photos: string;
+	presentation: string;
 	date: string;
 	series: string;
 	url: string;
@@ -21,7 +23,9 @@ export default (props: Props) => {
 		series,
 		chapter,
 		subhead,
-		byline,
+		author,
+		photos,
+		presentation,
 		date,
 		show
 	} = props;
@@ -34,8 +38,12 @@ export default (props: Props) => {
 			<h3 className="chapter">{chapter}</h3>
 			<hr className="bottom" />
 			<h3 className="subhead">{subhead}</h3>
-			<h4>By {byline}</h4>
+			<h4>Story: {author}</h4>
+			<h4>Photos: {photos}</h4>
+			<h4>Presentation: {presentation}</h4>
+			<br />
 			<h4>Published {date}</h4>
+			<h4>Presentation includes sound. Click icon to mute.</h4>
 			<div className="spacer" />
 		</div>
 	);

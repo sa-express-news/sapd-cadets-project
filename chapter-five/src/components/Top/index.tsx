@@ -15,7 +15,9 @@ interface Meta {
 	headline: string;
 	subhead: string;
 	chapter: string;
-	byline: string;
+	author: string;
+	photos: string;
+	presentation: string;
 	date: string;
 	series: string;
 	url: string;
@@ -38,6 +40,8 @@ interface Props {
 	appPosition: AppPosition;
 	data: Data;
 	seriesNav: SeriesNavs;
+	handleMute: Function;
+	appIsMuted: boolean;
 }
 
 interface State {
@@ -61,8 +65,14 @@ class Top extends React.Component<Props, State> {
 	}
 
 	render() {
-		const { appPosition, data, seriesNav } = this.props;
-		const { show }				= this.state;
+		const {
+			appPosition,
+			data,
+			seriesNav,
+			handleMute,
+			appIsMuted
+		} 					= this.props;
+		const { show }		= this.state;
 
 		return (
 			<div className="Top">
@@ -71,13 +81,14 @@ class Top extends React.Component<Props, State> {
 					src={data.hero.audio}
 					startFraction={0.6}
 					endFraction={0}
+					appIsMuted={appIsMuted}
 				>
 					<NavBar>
 						<div className="left">
 							<ENLogo />
 						</div>
 						<div className="right">
-							<SocialBlock url={data.meta.url} />
+							<SocialBlock url={data.meta.url} handleMute={handleMute} appIsMuted={appIsMuted} />
 						</div>
 					</NavBar>
 					<Hero {...data.hero}>

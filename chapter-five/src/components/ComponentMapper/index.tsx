@@ -17,11 +17,18 @@ import VideoContainer						from '../VideoContainer';
 import BackgroundVideo						from '../BackgroundVideo';
 
 // Interfaces
-import { AppPosition } from '../../utils/interfaces';
+import { AppPosition, Bio } from '../../utils/interfaces';
 
 interface ComponentProps {
 	value: any;
 	type: string;
+}
+
+interface Map {
+	object: ComponentProps;
+	appPosition: AppPosition;
+	appIsMuted: boolean;
+	bios: Array<Bio>;
 }
 
 export interface Mapper {
@@ -39,19 +46,19 @@ export interface Mapper {
 }
 
 export default {
-	intrograph: (object: ComponentProps, key: number) => <IntroParagraph text={object.value.text} key={key} />,
+	intrograph: ({ object }: Map, key: number) => <IntroParagraph text={object.value.text} key={key} />,
 
-	text: (object: ComponentProps, key: number) => <Paragraph text={object.value} key={key} />,
+	text: ({ object, bios }: Map, key: number) => <Paragraph text={object.value} bios={bios} key={key} />,
 
-	slideshow: (object: ComponentProps, key: number) => <Slideshow photos={object.value} key={key} />,
+	slideshow: ({ object }: Map, key: number) => <Slideshow photos={object.value} key={key} />,
 
-	photo: function (object: ComponentProps, key: number, appPosition: AppPosition) {
+	photo: function ({ object, appPosition, appIsMuted }: Map, key: number) {
 		const photo = object.value;
 		const photoPath = photo.source;
 		switch (photo.type) {
 
 			case 'full':
-				let photoComponent = <FullPhoto src={photoPath} alt={photo.caption} appPosition={appPosition} audio={photo.audio} />;
+				let photoComponent = <FullPhoto src={photoPath} alt={photo.caption} appPosition={appPosition} appIsMuted={appIsMuted} audio={photo.audio} />;
 				return <FullPhotoContainer caption={photo.caption} key={key}>{photoComponent}</FullPhotoContainer>;
 
 			case 'small-left':
@@ -67,19 +74,19 @@ export default {
 		}
 	},
 
-	photos: (object: ComponentProps, key: number, appPosition: AppPosition) => <Photos photos={object.value} key={key} appPosition={appPosition} />,
+	photos: ({ object, appPosition, appIsMuted }: Map, key: number) => <Photos photos={object.value} key={key} appPosition={appPosition} appIsMuted={appIsMuted} />,
 
-	pullquote: (object: ComponentProps, key: number) => <PullQuote quote={object.value.quote} source={object.value.source} key={key} />,
+	pullquote: ({ object }: Map, key: number) => <PullQuote quote={object.value.quote} source={object.value.source} key={key} />,
 
-	parallax: (object: ComponentProps, key: number, appPosition: AppPosition) => <Parallax appPosition={appPosition} {...object.value} key={key} />,
+	parallax: ({ object, appPosition, appIsMuted }: Map, key: number) => <Parallax appPosition={appPosition} appIsMuted={appIsMuted} {...object.value} key={key} />,
 
-	sectionhead: (object: ComponentProps, key: number) => <SectionHead {...object.value} key={key} />,
+	sectionhead: ({ object }: Map, key: number) => <SectionHead {...object.value} key={key} />,
 
-	video: (object: ComponentProps, key: number) => <VideoContainer {...object.value} key={key} />,
+	video: ({ object }: Map, key: number) => <VideoContainer {...object.value} key={key} />,
 
-	backgroundvideo: (object: ComponentProps, key: number, appPosition: AppPosition) => <BackgroundVideo appPosition={appPosition} {...object.value} key={key} />,
+	backgroundvideo: ({ object, appPosition, appIsMuted }: Map, key: number) => <BackgroundVideo appPosition={appPosition} appIsMuted={appIsMuted} {...object.value} key={key} />,
 
-	renderComponent: function (object: ComponentProps, key: number, appPosition: AppPosition) {
-		return object.type && this[object.type] ? this[object.type](object, key, appPosition) : null;
+	renderComponent: function ({ object, appPosition, appIsMuted, bios }: Map, key: number) {
+		return object.type && this[object.type] ? this[object.type]({ object, appPosition, appIsMuted, bios }, key) : null;
 	}
 };

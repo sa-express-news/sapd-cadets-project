@@ -13,3 +13,21 @@ export interface ComponentPosition {
 }
 
 export type MediaElement = HTMLAudioElement | HTMLVideoElement;
+
+export interface Chapter {
+	chapter: string;
+	desc: string;
+}
+
+export interface SeriesNavs {
+	chatter: string;
+	chapters: Array<Chapter>;
+	current: string;
+	show: boolean;
+}
+
+export interface Bio {
+	name: string;
+	data: string;
+	key: string;
+}

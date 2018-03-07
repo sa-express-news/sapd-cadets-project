@@ -12,7 +12,7 @@ interface Props {
 	show: boolean;
 }
 
-const isCurrent = (chapter: string, current: string) => chapter === current;
+const isCurrent = (chapter: string, current: string) => chapter === current.slice(0, current.indexOf(':'));
 
 const getClasses = (classes: Array<string>, toAdd: Array<string>, conditional: boolean) => {
 	if (conditional) {
