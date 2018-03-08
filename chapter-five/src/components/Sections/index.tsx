@@ -48,6 +48,7 @@ export default (props: Props) => {
 	return (
 		<div className="Sections">
 			{components}
+			<p className="Paragraph"><em>Emilie Eaton is a San Antonio Express-News staff writer. You can reach her at <a href="mailto:eeaton@express-news.net">eeaton@express-news.net</a>.</em></p>
 			<Bios bios={bios} />
 		</div>
 	);

@@ -38,8 +38,8 @@ export default (props: Props) => {
 			<h3 className="chapter">{chapter}</h3>
 			<hr className="bottom" />
 			<h3 className="subhead">{subhead}</h3>
-			<h4>Story: {author}</h4>
-			<h4>Photos: {photos}</h4>
+			<h4>Stories: {author}</h4>
+			<h4>Photos & videos: {photos}</h4>
 			<h4>Presentation: {presentation}</h4>
 			<br />
 			<h4>Published {date}</h4>

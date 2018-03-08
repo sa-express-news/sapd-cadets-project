@@ -53,6 +53,11 @@ div.SeriesNav {
 				}
 			}
 
+			a h4, a p{
+				text-decoration: none;
+				color: white;
+			}
+
 			&.current {
 				border: 1px solid white;
 

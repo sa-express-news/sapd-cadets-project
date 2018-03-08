@@ -37,6 +37,10 @@ function getServedPath(appPackageJson) {
   return ensureSlash(servedUrl, true);
 }
 
+function getAWStoWCMPath(appPackageJson) {
+  return getPublicUrl(appPackageJson) + '/';
+}
+
 // config after eject: we're in ./config/
 module.exports = {
   dotenv: resolveApp('.env'),
@@ -53,5 +57,5 @@ module.exports = {
   appTsLint: resolveApp('tslint.json'),
   archieML: resolveApp('config/archieml-loader'),
   publicUrl: getPublicUrl(resolveApp('package.json')),
-  servedPath: getServedPath(resolveApp('package.json'))
+  servedPath: getAWStoWCMPath(resolveApp('package.json'))
 };

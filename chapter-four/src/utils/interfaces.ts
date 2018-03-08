@@ -17,6 +17,7 @@ export type MediaElement = HTMLAudioElement | HTMLVideoElement;
 export interface Chapter {
 	chapter: string;
 	desc: string;
+	link: string;
 }
 
 export interface SeriesNavs {

@@ -27,10 +27,20 @@ export default (props: Props) => (
 		<div className="nav-wrapper">
 			{props.chapters.map((curr: Chapter, key: number) => (
 				<div key={key} className={getClasses(['chapter'], ['current'], isCurrent(curr.chapter, props.current))}>
-					<h4>{curr.chapter}</h4>
-					<p>{curr.desc}</p>
 					{isCurrent(curr.chapter, props.current) && (
-						<p className="current">Now reading</p>
+						<div>
+							<h4>{curr.chapter}</h4>
+							<p>{curr.desc}</p>
+							<p className="current">Now reading</p>
+						</div>
+					)}
+					{!isCurrent(curr.chapter, props.current) && (
+						<a href={curr.link}>
+							<div>
+								<h4>{curr.chapter}</h4>
+								<p>{curr.desc}</p>
+							</div>
+						</a>
 					)}
 					<hr />
 				</div>

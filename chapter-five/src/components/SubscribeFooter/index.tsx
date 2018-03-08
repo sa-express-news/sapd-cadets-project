@@ -16,7 +16,12 @@ interface Props {
 
 export default ({ link, seriesNav, chapter }: Props) => (
 	<div className="SubscribeFooter">
-		<SeriesNav {...seriesNav} current={chapter} show={true} />
+		<SeriesNav
+			chapters={seriesNav.chapters}
+			current={chapter}
+			chatter={''}
+			show={true}
+		/>
 		<div>
 			<h4>Real Journalism | Real Insight</h4>
 			<p>The Express-News brings you authoritative local stories. Subscribe today.</p>

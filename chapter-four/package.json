@@ -1,5 +1,5 @@
 {
-  "name": "cadet-typescript-react-test",
+  "name": "cadet-typescript-react-chapter-four",
   "version": "0.1.0",
   "private": true,
   "s3Bucket": "https://s3.amazonaws.com/projects.expressnews.com/cadets/chapter-four",
