@@ -56,12 +56,12 @@ div.Meta {
 
 	    &.top {
 	    	width: 40%;
-	    	margin: 1rem 0;
+	    	margin: 1rem auto;
 	    }
 
 	    &.bottom {
 	    	width: 10%;
-	    	margin: 0.6rem 0;
+	    	margin: 0.6rem auto;
 	    	background-image: linear-gradient(to right, rgba($policeYellow, 0), rgba($policeYellow, 0.75), rgba($policeYellow, 0));
 	    }
 	}

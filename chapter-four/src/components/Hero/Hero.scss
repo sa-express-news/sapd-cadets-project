@@ -1,9 +1,15 @@
+@import 'node_modules/express-news-styleguide/init-base';
 @import '../../styles/variables';
 
 div.Hero {
 	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
+	background-position: top;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
 	background-color: $policeBlue;
 	width: 100vw;
+
+	@include mediaquery($default-tablet) {
+		background-attachment: fixed;
+	}
 }
