@@ -1,8 +1,8 @@
-import * as React 	from 'react';
+import * as React from 'react';
 
-import Section 			from '../Section';
-import ComponentMapper 	from '../ComponentMapper';
-import Bios				from '../Bios';
+import Section from '../Section';
+import ComponentMapper from '../ComponentMapper';
+import Bios from '../Bios';
 
 // Interfaces
 import { AppPosition, Bio } from '../../utils/interfaces';
@@ -32,9 +32,9 @@ export default (props: Props) => {
 		appPosition,
 		appIsMuted,
 		bios,
-	} 						= props;
-	const arrayOfSections	= getArrayOfSections(sections);
-	
+	} = props;
+	const arrayOfSections = getArrayOfSections(sections);
+
 	const components = arrayOfSections.map((section: Array<object>, index: number) => (
 		<Section
 			data={section}
@@ -48,6 +48,7 @@ export default (props: Props) => {
 	return (
 		<div className="Sections">
 			{components}
+			<p className="Paragraph"><em>(Postscript: Officer Steve Abbott, the driving instructor, died in January, weeks after being diagnosed with cancer.)</em></p>
 			<p className="Paragraph"><em>Emilie Eaton is a San Antonio Express-News staff writer. You can reach her at <a href="mailto:eeaton@express-news.net">eeaton@express-news.net</a>.</em></p>
 			<Bios bios={bios} />
 		</div>
